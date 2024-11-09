@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - กรรชัย น้อยชาลี</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        /* Reset Margin and Padding */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #ff7f50, #ff1493);
+            color: white;
+            text-align: center;
+            padding: 0;
+            overflow-x: hidden;
+            transition: all 0.5s ease-in-out;
+        }
+
+        h1, h2 {
+            font-family: 'Playfair Display', serif;
+            color: #fff;
+        }
+
+        header {
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 50px 0;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        header h1 {
+            font-size: 3.5rem;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+        }
+
+        /* Animation */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .container {
+            width: 85%;
+            max-width: 1200px;
+            margin: 30px auto;
+            background-color: rgba(0, 0, 0, 0.6);
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+            animation: slideUp 1.5s ease-in-out;
+        }
+
+        @keyframes slideUp {
+            0% {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .content {
+            margin: 20px 0;
+        }
+
+        .content p {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            margin-bottom: 15px;
+        }
+
+        .content p strong {
+            color: #ffeb3b;
+        }
+
+        /* Add image in circular shape with border */
+        .profile-image {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%; /* Makes the image circular */
+            border: 5px solid #fff; /* White border around the image */
+            margin-top: -80px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .button {
+            padding: 10px 25px;
+            background-color: #ff1493;
+            color: white;
+            text-transform: uppercase;
+            font-weight: bold;
+            letter-spacing: 2px;
+            border-radius: 25px;
+            text-decoration: none;
+            margin-top: 20px;
+            display: inline-block;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .button:hover {
+            background-color: #ff7f50;
+            transform: scale(1.1);
+        }
+
+        footer {
+            background-color: #000;
+            padding: 15px 0;
+            color: #fff;
+            font-size: 0.9rem;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            text-align: center;
+            box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .social-icons a {
+            margin: 0 10px;
+            color: white;
+            font-size: 1.5rem;
+            text-decoration: none;
+            transition: color 0.3s ease-in-out;
+        }
+
+        .social-icons a:hover {
+            color: #ffeb3b;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Portfolio ของ กรรชัย น้อยชาลี</h1>
+    </header>
+
+    <!-- Main Content Section -->
+    <div class="container">
+        <!-- Add Profile Image -->
+        <img src="images/profile.jpg" alt="กรรชัย น้อยชาลี" class="profile-image">
+        
+        <h2>ข้อมูลส่วนตัว</h2>
+        <div class="content">
+            <p><strong>ชื่อ:</strong> กรรชัย น้อยชาลี</p>
+            <p><strong>ระดับชั้น:</strong> ม.6</p>
+            <p><strong>เกรดเฉลี่ย:</strong> 4.00</p>
+            <p><strong>ความชอบ:</strong> ชอบในการเขียนโปรแกรม</p>
+        </div>
+
+        <a href="mailto:your-email@example.com" class="button">ติดต่อ</a>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>© 2024 กรรชัย น้อยชาลี | <a href="https://www.linkedin.com" target="_blank">LinkedIn</a> | <a href="https://github.com" target="_blank">GitHub</a></p>
+        <div class="social-icons">
+            <a href="https://www.facebook.com" target="_blank">Facebook</a>
+            <a href="https://www.instagram.com" target="_blank">Instagram</a>
+            <a href="https://www.twitter.com" target="_blank">Twitter</a>
+        </div>
+    </footer>
+
+</body>
+</html>
